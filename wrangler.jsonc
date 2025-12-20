@@ -6,13 +6,27 @@
     "directory": "./dist",
     "binding": "ASSETS"
   },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "dojo_local_db",
+      "database_id": "123"
+    }
+  ],
   "env": {
     "staging": {
       "vars": {
         "ENVIRONMENT": "staging",
         "CF_ACCESS_DOMAIN": "https://amey01962.cloudflareaccess.com",
         "POLICY_AUD": "9d85888a09d98edcbd2b3f2a4e85df012246dde1395f0b3761bcf1c492af103a"
-      }
+      },
+      "d1_databases": [
+        {
+          "binding": "DB",
+          "database_name": "dojo_staging_db",
+          "database_id": "3535f09b-1e02-4dff-82ba-6a1d1e4c9a36"
+        }
+      ]
     },
     "production": {
       "vars": {
